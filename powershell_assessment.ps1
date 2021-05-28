@@ -25,7 +25,7 @@ $filesToRemove = @("application cache/cache",
                    "blob_storage",
                    "Cache",
                    "databases.",
-                   "GPUCache",
+                   "GPUcache",
                    "IndexedDB",
                    "Local Storage",                   
                    "tmp")
