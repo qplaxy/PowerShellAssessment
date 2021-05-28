@@ -1,21 +1,32 @@
-﻿<# PowerShell assessment for GHD Automation team
-Valeria Ortiz León #>
+﻿<#
+.SYNOPSIS
+    PowerShell assessment for GHD Automation team 
+    Valeria Ortiz León
 
-<# Important notes: 
-1. For assessment purposes, I added a prompt to press Enter to exit and did not make it an autoexecutable script 
-because of some "Write-Host" messages that were added for visibility. 
+.DESCRIPTION
+    This script will delete cache files in certain directories
 
-2. In the project description, I noticed something in the given directory: 
-%appdata%\Microsoft\teams\databases. 
+.INPUTS
+    None.
 
-This directory contains a "." at the end in the specification. 
-This "." was added to the name in the "filesToRemove" array to follow the instructions but must de deleted to clear the files inside the real %appdata%\Microsoft\teams\databases folder.
+.OUTPUTS
+    No output. Only deletes cache files in the directories specified.
+
+.NOTES
+    1. For assessment purposes, I added a prompt to press Enter to exit and did not make it an autoexecutable script 
+    because of some "Write-Host" messages that were added for visibility. 
+
+    2. In the project description, I noticed something in the given directory: 
+    %appdata%\Microsoft\teams\databases. 
+
+    This directory contains a "." at the end in the specification. 
+    This "." was added to the name in the "filesToRemove" array to follow the instructions, but must de deleted to clear the files inside the real %appdata%\Microsoft\teams\databases folder.
 #>
 
 <# Script #>
 
 # Writes a message to the user to let them know the script has started
-Write-Host "Starting script..."
+Write-Host "Beginning script..."
 
 # Defines a variable "directory" as C:/Users/%current user%/AppData/Roaming/Microsoft/Teams where the files to be cleaned are located
 $directory = $env:AppData + "\Microsoft\Teams"
