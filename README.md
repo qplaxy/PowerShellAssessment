@@ -8,12 +8,19 @@ Develop a PowerShell script to fix a common Teams issue that causes Teams calend
 The script will fix the Teams-Outlook calendar synchronization issue by clearing the cache files in the following directories:
 
 %appdata%\Microsoft\Teams\application cache\cache
+
 %appdata%\Microsoft\Teams\application cache\blob_storage
+
 %appdata%\Microsoft\Teams\application cache\Cache
+
 %appdata%\Microsoft\Teams\application cache\databases
+
 %appdata%\Microsoft\Teams\application cache\GPUcache
+
 %appdata%\Microsoft\Teams\application cache\IndexedDB
+
 %appdata%\Microsoft\Teams\application cache\Local Storage
+
 %appdata%\Microsoft\Teams\application cache\tmp
 
 # Usage 
